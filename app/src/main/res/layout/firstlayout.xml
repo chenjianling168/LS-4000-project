@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#000"
+        android:alpha="0.6"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <RelativeLayout
+            android:layout_width="373.3dp"
+            android:layout_height="300dp"
+            android:background="@drawable/addsam_shape_corner"
+            android:orientation="vertical"
+            android:id="@+id/id_protip_layout">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string196"
+                android:layout_gravity="center"
+                android:id="@+id/id_first_title"
+                style="@style/temtiptitlefont"
+                android:layout_marginTop="40dp"
+                android:layout_centerHorizontal="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_gravity="center"
+                android:id="@+id/id_first_tip"
+                style="@style/temtiptitlefont"
+                android:layout_below="@id/id_first_title"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/addsamsave_shape_corner"
+                android:layout_marginBottom="28dp"
+                android:text="@string/string89"
+                style="@style/whitefont"
+                android:id="@+id/id_first_ensure"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"/>
+
+
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>

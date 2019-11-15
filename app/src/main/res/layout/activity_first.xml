@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_first_firstpage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/firstpage">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/logo_first"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="213.3dp"
+            android:id="@+id/id_first_logo"
+            android:visibility="gone"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string37"
+            android:layout_centerInParent="true"
+            android:id="@+id/id_first_loading"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"/>
+
+        <TextView
+            android:id="@+id/id_first_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_first_loading"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:textSize="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="true"
+            />
+
+        <ProgressBar
+            android:id="@+id/id_first_upload"
+            android:indeterminate="false"
+            android:indeterminateOnly="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_below="@+id/id_first_hint"
+            android:max="100"
+            android:progress="0"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:visibility="gone"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/id_first_logo"
+            android:layout_gravity="center">
+            <ProgressBar
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:indeterminateDrawable="@drawable/progress_bar"
+                android:layout_gravity="center"
+                android:visibility="gone"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/id_first_anim"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="380dp"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="26.7dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string38"
+                android:layout_gravity="center"
+                android:id="@+id/id_first_version"
+                android:visibility="gone"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string39"
+                android:layout_gravity="center"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:id="@+id/id_first_company"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/bg_testingpage"
+    tools:context="com.example.chen.ls4000.activity.TestActivity">
+
+    <RelativeLayout
+        android:layout_width="480dp"
+        android:layout_height="64dp"
+        android:id="@+id/id_test_title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string178"
+            style="@style/titlefont"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/id_test_back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string84"
+            android:textColor="#fff"
+            android:textSize="22.7sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/id_test_allchoose"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_deletewhite"
+            android:layout_toLeftOf="@id/id_test_allchoose"
+            android:layout_marginRight="26.7dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/id_test_delete"/>
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/id_test_title"
+        android:id="@+id/id_test_lv"
+        android:divider="@null"
+        android:layout_marginTop="6.7dp"
+        android:layout_above="@+id/id_test_btnlayout"
+        android:layout_marginBottom="15dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/id_test_btnlayout">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_poct"
+            android:id="@+id/id_test_insttest"
+            android:layout_marginLeft="46dp"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/btn_incubationtest"
+            android:id="@+id/id_test_incutest"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="46dp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/id_test_timelayout"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/bg_incubationtest"
+            android:id="@+id/id_test_incutestblack"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="46dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            style="@style/timefont"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="22.7dp"
+            android:id="@+id/id_test_time"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/img_hourglass_little"
+            android:layout_toLeftOf="@id/id_test_time"
+            android:layout_margin="20dp"
+            />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/btn_scan"
+        android:text="扫码加样"
+        android:id="@+id/id_test_scanadd"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

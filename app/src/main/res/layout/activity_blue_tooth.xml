@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chen.ls4000.activity.BlueToothActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_headofpage"
+        android:id="@+id/id_bluetooth_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string124"
+            android:layout_centerInParent="true"
+            android:layout_margin="30dp"
+            style="@style/titlefont" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:layout_marginLeft="20dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/id_bluetooth_back"/>
+    </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/id_bluetooth_title"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="77.3dp"
+                android:background="#fff">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string125"
+                    style="@style/settingstextfont"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"/>
+                <CheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/ellipsebtn_style"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:id="@+id/id_bluetooth_switch"/>
+            </RelativeLayout>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#c0c0c0"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/string294"
+                style="@style/settingslittlefont"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/id_bluetooth_available"
+                android:visibility="gone"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="68dp"
+                android:background="#fff"
+                android:layout_below="@id/id_bluetooth_available"
+                android:id="@+id/id_bluetooth_layout"
+                android:visibility="gone">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/id_bluetooth_name"
+                    android:gravity="center_vertical"
+                    android:textColor="#000"
+                    android:text="T12 BT Printer"
+                    style="@style/settingstextfont"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="@string/string104"
+                    android:id="@+id/id_bluetooth_state"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="70dp"
+                    android:textColor="#ff000000"
+                    android:textSize="17sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:id="@+id/id_bluetooth_tv1"
+                style="@style/settingslittlefont"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="13.3dp"
+                android:layout_marginBottom="6.7dp" />
+
+            <ListView
+                android:id="@+id/lv_bluetooth"
+                android:layout_width="match_parent"
+                android:layout_height="500dp"
+                />
+
+        </LinearLayout>
+
+</RelativeLayout>

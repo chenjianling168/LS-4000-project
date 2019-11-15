@@ -1,0 +1,204 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:dropDownListViewStyle">@style/xzfSpinnerStyle</item>
+    </style>
+
+    <style name="titlefont">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="contitlefont">
+        <item name="android:textSize">28sp</item>
+        <item name="android:textColor">#242a33</item>
+    </style>
+
+    <style name="timefont">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="addsamtextfont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#6b7d99</item>
+    </style>
+
+    <style name="addsamfont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#242a33</item>
+    </style>
+
+    <style name="whitefont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="blackfont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="settingssearch">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#73a3f0</item>
+    </style>
+
+    <style name="temtiptitlefont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#363a4d</item>
+    </style>
+
+    <style name="settingsresetfont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#f07373</item>
+    </style>
+
+    <style name="settingsageingfont">
+        <item name="android:textSize">22.7sp</item>
+        <item name="android:textColor">#fefefe</item>
+    </style>
+
+    <style name="settingsfont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#6b7d99</item>
+    </style>
+
+    <style name="settingstextfont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#6b7899</item>
+    </style>
+
+    <style name="settingsinfofont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="settingslanfont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#363c4d</item>
+    </style>
+
+    <style name="samtypeunchoosefont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#73a3f0</item>
+    </style>
+
+    <style name="samtypechoosefont">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#fff</item>
+    </style>
+
+    <style name="lvitemfont1">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#6b7d99</item>
+    </style>
+
+    <style name="lvitemfont2">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#475366</item>
+    </style>
+
+    <style name="coninfofont">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#b8bfcc</item>
+    </style>
+
+    <style name="queryheadfont">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#242a33</item>
+    </style>
+
+    <style name="temtiptextfont">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#596080</item>
+    </style>
+
+    <style name="conmanatextfont">
+        <item name="android:textSize">18.7sp</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="settingslittlefont">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#b8c0cc</item>
+    </style>
+
+    <style name="querybtnfont">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#73a3f0</item>
+    </style>
+
+    <style name="resulttextfont">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#b8bfcc</item>
+    </style>
+
+    <style name="resultinfofont">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#242a33</item>
+    </style>
+
+    <style name="resulttextlfont">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#b8bfcc</item>
+    </style>
+
+    <style name="resultinfolfont">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#242a33</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    
+
+    <style name="GenderCheckBoxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/gender_checkbox_style</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AlertDialog" parent="@android:style/Theme.DeviceDefault.Light.Dialog">
+        <!-- 这里设置背景为透明，为了隐藏边框 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <!-- 这里是修改顶部标题背景颜色，具体颜色自己定，可以是图片 -->
+        <item name="android:topDark">@color/colorwhite</item>
+        <!-- 这里是修改内容区域背景颜色 -->
+        <item name="android:centerDark">@color/colorwhite</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+
+    <!--字体大小 -->
+    <style name="Theme.Picker" parent="Theme.AppCompat.Light">
+        <item name="android:editTextStyle">@style/Widget.EditText.White</item>
+    </style>
+    <style name="Widget.EditText.White" parent="@android:style/Widget.EditText">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="spinner_style" parent="Base.Widget.AppCompat.Spinner">
+
+    </style>
+
+    <style name="xzfSpinnerStyle" parent="android:Widget.ListView.DropDown">
+        <!-- 分隔线颜色 -->
+        <item name="android:divider">#bbb</item>
+        <item name="android:dividerHeight">1dp</item>
+        <!-- item按下效果
+        <item name="android:listSelector">@drawable/selector_bg_text</item>-->
+    </style>
+
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.chen.ls4000.activity.FunctionActivity">
+
+    <Button
+        android:id="@+id/btn_start_io"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="开始GPIO测试"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="42dp" />
+
+    <Button
+        android:id="@+id/btn_stop_io"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="关闭GPIO测试"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="101dp" />
+
+
+</LinearLayout>

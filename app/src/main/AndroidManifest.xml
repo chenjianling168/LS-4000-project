@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chen.ls4000">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DEVICE_POWER" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 允许程序发现和配对蓝牙设备 -->
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <!-- 用于读取手机当前的状态 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 用于写入缓存数据到扩展存储卡 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许程序对SD卡进行读取 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <!-- 用于设置local语言 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+
+
+    <application
+        android:name=".utils.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="4c0129c50e5e7cec360df139fd8f2d3c" />
+
+        <meta-data android:name="android.max_aspect" android:value="2.1" />
+
+        <activity android:name=".activity.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.MONKEY" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activity.Location_Activity" />
+        <activity
+            android:name=".activity.TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.QueryActivity"
+            android:label="@string/title_activity_query"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SystemActivity"
+            android:label="@string/title_activity_system"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ConmanaActivity"
+            android:label="@string/title_activity_conmana"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:windowSoftInputMode="stateHidden|adjustPan"
+            />
+        <activity
+            android:name=".activity.EngineerActivity"
+            android:label="@string/title_activity_engineer"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UserActivity"
+            android:label="@string/title_activity_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.PrintActivity"
+            android:label="@string/title_activity_print"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.WIFIActivity"
+            android:label="@string/title_activity_wifi"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.BlueToothActivity"
+            android:label="@string/title_activity_blue_tooth"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.CoefficientActivity"
+            android:label="@string/title_activity_Coeff_icent"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.GPSActivity"
+            android:label="@string/title_activity_gps"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.TimeActivity"
+            android:label="@string/title_activity_time"
+            android:theme="@style/Theme.Picker" />
+        <activity
+            android:name=".activity.AboutActivity"
+            android:label="@string/title_activity_about"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.SIMActivity"
+            android:label="@string/title_activity_sim"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AgeingActivity"
+            android:label="@string/title_activity_ageing"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ElecActivity"
+            android:label="@string/title_activity_elec"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.InstruActivity"
+            android:label="@string/title_activity_instru"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity
+            android:name=".activity.StaffActivity"
+            android:label="@string/title_activity_instru"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.AddTestActivity"
+            android:label="AddTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.UpdateTestActivity"
+            android:label="UpdateTestActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activity.FunctionActivity"/>
+
+        <service android:name="com.amap.api.location.APSService" />
+        <service android:name=".service.PortService" />
+        <service android:name=".service.BLEService" />
+        <service android:name=".service.MyService">
+            <intent-filter android:priority="90000">
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".service.BlueToothService"
+            android:enabled="true"
+            android:exported="true" />
+        <service android:name=".service.BatteryService"
+            />
+
+        <activity
+            android:name=".activity.PromanaActivity"
+            android:label="@string/title_activity_promana"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ResultActivity"
+            android:label="@string/title_activity_result"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <!-- <receiver android:name=".utils.Receiver"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.BOOT_COMPLETED" /> -->
+
+
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </receiver> -->
+
+        <activity
+            android:name=".activity.LanguageActivity"
+            android:label="@string/title_activity_language"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.OperActivity"
+            android:label="@string/title_activity_oper"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name=".activity.FirstActivity"/>
+
+        <activity android:name=".activity.ModifyActivity"/>
+
+        <service android:name=".service.PortCardService" />
+        <service android:name=".service.LisService" />
+
+        <provider
+            android:name=".provider.MyProvider"
+            android:authorities="com.lanyu.ls4000.provider.MyProvider"
+            android:enabled="true"
+            android:exported="true">
+
+        </provider>
+    </application>
+
+</manifest>

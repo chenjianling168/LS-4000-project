@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/id_settime_starttime"
+        android:layout_gravity="center">
+
+        <DatePicker
+            android:id="@+id/id_settime_datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:startYear="2000"
+            android:endYear="2050"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"/>
+        <!-- 定义一个TimePicker组件android:spinnersShown="true"
+        <com.njit.student.yuqzy.bledemo.utils.PickerView
+            android:layout_width="80dp"
+            android:layout_height="100dp"
+            android:id="@+id/id_settime_timepicker"
+            android:layout_gravity="center"/>-->
+        <TimePicker
+            android:layout_width="wrap_content"
+            android:layout_height="300dp"
+            android:id="@+id/id_settime_timepicker"
+            android:layout_gravity="center"
+            android:timePickerMode="spinner"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string89"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/id_settime_sure"
+            android:layout_margin="5dp"
+            android:background="@drawable/addsamsave_shape_corner"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/string132"
+            android:textSize="20sp"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:id="@+id/id_settime_cancel"
+            android:layout_margin="5dp"
+            android:background="@drawable/addsamcontinue_shape_corner"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f7fa"
+    tools:context="com.example.chen.ls4000.activity.StaffActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@mipmap/bg_headofpage"
+        android:id="@+id/id_staff_title">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/string262"
+            style="@style/titlefont"
+            android:layout_centerInParent="true" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/ic_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/id_staff_back"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/id_staff_title">
+
+        <LinearLayout
+                android:layout_width="220dp"
+                android:layout_height="450dp"
+                android:orientation="vertical"
+                android:id="@+id/id_staff_linearlayout1">
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/id_staff_test1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:focusableInTouchMode="true"
+                        android:focusable="true"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/string247"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingLeft="90dp">
+
+                    <EditText
+                        android:id="@+id/id_staff_textT1"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:focusable="false"
+                        android:background="@drawable/staff_border" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:id="@+id/id_staff_test2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:text="@string/string248"
+                        android:textSize="20dp" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingLeft="90dp">
+
+                    <EditText
+                        android:id="@+id/id_staff_textT2"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:focusable="false"
+                        android:background="@drawable/staff_border" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+               <RelativeLayout
+                   android:layout_width="80dp"
+                   android:layout_height="50dp">
+                   <TextView
+                       android:id="@+id/id_staff_test3"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="@string/string249"
+                       android:textSize="20dp"
+                       android:paddingLeft="15dp"
+                       android:paddingTop="20dp" />
+               </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingLeft="90dp">
+                    <EditText
+                        android:id="@+id/id_staff_textT3"
+                        android:layout_width="100dp"
+                        android:layout_height="30dp"
+                        android:focusable="false"
+                        android:background="@drawable/staff_border" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+                <RelativeLayout
+                    android:layout_width="80dp"
+                    android:layout_height="50dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/string250"
+                        android:textSize="20dp"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="20dp"
+                        android:id="@+id/id_staff_T1place" />
+                </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_placeT1"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string251"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T2place" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_placeT2"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string252"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T3place" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_placeT3"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string253"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_Ctext"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_textC"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string254"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_Cplace"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_placeC"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+            </RelativeLayout>
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="80dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string255"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_Cpeak"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="90dp">
+
+                <EditText
+                    android:id="@+id/id_staff_peakC"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+               android:layout_width="220dp"
+               android:layout_height="450dp"
+               android:orientation="vertical"
+                android:id="@+id/id_staff_linearlayout2"
+                android:layout_toRightOf="@+id/id_staff_linearlayout1">
+
+            <RelativeLayout
+                   android:layout_width="220dp"
+                   android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string256"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T1C"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_textT1C"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+               </RelativeLayout>
+
+            <RelativeLayout
+                  android:layout_width="220dp"
+                  android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string257"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T2C" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_textT2C"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+
+              </RelativeLayout>
+
+            <RelativeLayout
+                   android:layout_width="220dp"
+                   android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string258"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T3C"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="220dp"
+                    android:layout_height="50dp"
+                    android:paddingTop="18dp"
+                    android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_textT3C"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string259"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T1peak"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_peakT1"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+            </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string260"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T2peak"/>
+
+                </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_peakT2"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp">
+
+            <RelativeLayout
+                android:layout_width="100dp"
+                android:layout_height="50dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/string261"
+                    android:textSize="20dp"
+                    android:paddingLeft="15dp"
+                    android:paddingTop="20dp"
+                    android:id="@+id/id_staff_T3peak"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:paddingTop="18dp"
+                android:paddingLeft="110dp">
+
+                <EditText
+                    android:id="@+id/id_staff_peakT3"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:focusable="false"
+                    android:background="@drawable/staff_border" />
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_below="@+id/id_staff_linearlayout4"
+                android:layout_toRightOf="@+id/id_staff_linearlayout5"
+                android:layout_alignParentBottom="true"
+                android:id="@+id/id_staff_btnlayout">
+
+                <EditText
+                    android:id="@+id/id_staff_amount"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:digits="123"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/staff_border"
+                    style="@style/settingsinfofont"/>
+
+
+                <ImageView
+                    android:id="@+id/id_staff_testBtn"
+                    android:layout_width="200dp"
+                    android:layout_height="70dp"
+                    android:textSize="20dp"
+                    android:background="@mipmap/testbtn"
+                    android:layout_below="@+id/id_staff_amount"
+                    android:layout_marginTop="30dp"/>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/id_staff_linearlayout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/id_staff_linearlayout2"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <com.example.chen.ls4000.utils.CurveChart
+                android:id="@+id/id_staff_customCurveChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:paddingTop="10dp" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+
